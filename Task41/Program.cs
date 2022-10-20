@@ -20,6 +20,9 @@ int CountPos(int[] array)
     return count;
 }
 
+int[] porno = CreateArray(7);
+int sum = CountPos(porno);
+
 void PrintArray(int[] array)
 {
     Console.Write("[");
@@ -28,11 +31,7 @@ void PrintArray(int[] array)
         if(i < array.Length - 1) Console.Write($"{array[i]}, ");
         else Console.Write($"{array[i]}");
     }
-    Console.WriteLine($"]");
+    Console.WriteLine($"] -> {sum}");
 }
 
-
-int[] porno = CreateArray(7);
-int sum = CountPos(porno);
 PrintArray(porno);
-Console.WriteLine($" -> {sum}");
